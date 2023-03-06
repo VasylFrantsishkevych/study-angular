@@ -1,4 +1,4 @@
 export const environment = {
-  production: true,
-  API: 'https://owu.linkpc.net/carsAPI/v1',
+  production: false,
+  API: 'https://owu.linkpc.net/carsAPI/v2',
 };

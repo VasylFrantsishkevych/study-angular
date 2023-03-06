@@ -3,18 +3,35 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
-import { CarsComponent } from './components/cars/cars.component';
-import { CarComponent } from './components/car/car.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
+import { MailLayaoutComponent } from './layouts/mail-layaout/mail-layaout.component';
+import { CarsComponent } from './components/cars/cars.component';
+import { CarComponent } from './components/car/car.component';
+import { LoginComponent } from './components/login/login.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
+import { RegisterFormComponent } from './components/register-form/register-form.component';
+import { RegisterComponent } from './components/register/register.component';
+import { HeaderComponent } from './components/header/header.component';
+import {RouterOutlet} from "@angular/router";
+import {AppRoutingModule} from "./app-routing.module";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
     AppComponent,
+    MailLayaoutComponent,
     CarsComponent,
-    CarComponent
+    CarComponent,
+    LoginComponent,
+    LoginFormComponent,
+    RegisterFormComponent,
+    RegisterComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +39,12 @@ import {MatButtonModule} from "@angular/material/button";
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterOutlet,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatDialogModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
