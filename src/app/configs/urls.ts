@@ -9,7 +9,8 @@ const urls = {
   auth: {
     login: auth,
     refresh: `${auth}/refresh`
-  }
+  },
+  users: `${API}/users`,
 }
 
 export {
