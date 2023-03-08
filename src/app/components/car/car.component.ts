@@ -1,0 +1,20 @@
+import {Component, Input, OnInit} from '@angular/core';
+import {ICar} from "../../interfaces";
+
+@Component({
+  selector: 'app-car',
+  templateUrl: './car.component.html',
+  styleUrls: ['./car.component.css']
+})
+export class CarComponent implements OnInit {
+
+  @Input('my')
+  car: ICar;
+  panelOpenState = false;
+
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
+}
