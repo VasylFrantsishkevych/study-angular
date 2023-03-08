@@ -22,6 +22,9 @@ import {MatDialogModule} from "@angular/material/dialog";
 import {MatCardModule} from "@angular/material/card";
 import {A11yModule} from "@angular/cdk/a11y";
 import {MainInterceptor} from "./main.interceptor";
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import {MainInterceptor} from "./main.interceptor";
     MatToolbarModule,
     MatDialogModule,
     MatCardModule,
-    A11yModule
+    A11yModule,
+    MatExpansionModule,
+    MatPaginatorModule,
+    MatProgressBarModule
   ],
   providers: [
     {

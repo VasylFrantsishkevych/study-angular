@@ -12,8 +12,8 @@ export class CarService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getAll(): Observable<IPaginatedData<ICar>> {
-    return this.httpClient.get<IPaginatedData<ICar>>(urls.cars)
+  getAll(page = 1): Observable<IPaginatedData<ICar>> {
+    return this.httpClient.get<IPaginatedData<ICar>>(urls.cars, {params: {page}})
   }
   getById(id: number): Observable<ICar> {
     return this.httpClient.get<ICar>(`${urls.cars}/${id}`)

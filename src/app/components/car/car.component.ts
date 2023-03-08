@@ -10,6 +10,8 @@ export class CarComponent implements OnInit {
 
   @Input('my')
   car: ICar;
+  panelOpenState = false;
+
   constructor() {
   }
 

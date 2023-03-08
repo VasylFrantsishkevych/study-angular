@@ -16,6 +16,7 @@ export class RegisterComponent implements OnInit {
       disableClose: true,
       enterAnimationDuration: '1000ms',
       exitAnimationDuration: '1000ms',
+      hasBackdrop: false,
     })
   }
 }

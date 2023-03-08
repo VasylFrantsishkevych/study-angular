@@ -36,9 +36,7 @@ export class RegisterFormComponent implements OnInit {
   register() {
     this.authService.register(this.form.value).subscribe({
       next: () => {
-        this.registerError = false;
         this.router.navigate(['/login']);
-        this.dialogRef.close();
       },
       error: () => {
         this.registerError = true;

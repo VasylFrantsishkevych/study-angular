@@ -17,7 +17,7 @@ export class AuthService {
   constructor(private httpClient: HttpClient) { }
 
   register(user: IAuth): Observable<IAuth> {
-    return this.httpClient.post<IAuth>(urls.users, user)
+    return this.httpClient.post<IAuth>(urls.user.create, user)
   }
 
   //логінеця новий юзер
