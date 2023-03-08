@@ -1,3 +1,7 @@
 <div>
+<!--  send data in state-->
+<!--  <a routerLink="{{user.id}}" [state]="{user}">{{user.id}}. {{user.name}}</a>-->
   {{user.id}}. {{user.name}}
+  <button (click)="getDetails()">Details</button>
+  <button (click)="list()">List</button>
 </div>
